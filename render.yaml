@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ci-cd-lab9
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app/app.py
+    autoDeploy: false
+    envVars: []
